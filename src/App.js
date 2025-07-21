@@ -71,14 +71,25 @@ function App() {
   ];
 
   const skills = [
-    { name: "Vue.js", level: 95, color: "success" },
-    { name: "React.js", level: 90, color: "primary" },
-    { name: "Laravel", level: 95, color: "danger" },
-    { name: "Docker", level: 85, color: "info" },
-    { name: "Node.js", level: 88, color: "success" },
-    { name: "WordPress", level: 92, color: "dark" },
-    { name: "MySQL", level: 90, color: "warning" },
-    { name: "Python", level: 80, color: "warning" },
+    { name: "Bisnis Berjalan Otomatis", level: 95, color: "success" },
+    {
+      name: "Akses Data Real-Time, Di Mana Saja & Kapan Saja",
+      level: 90,
+      color: "primary",
+    },
+    {
+      name: "Tingkatkan Efektivitas dan Profesional Bisnis Anda",
+      level: 95,
+      color: "danger",
+    },
+    { name: "Hemat Biaya Jangka Panjang", level: 85, color: "info" },
+    { name: "Custom Sesuai Alur Bisnis Anda", level: 88, color: "success" },
+    {
+      name: "Data Bisnis Aman & Di Bawah Kendali Anda",
+      level: 92,
+      color: "warning",
+    },
+    { name: "Siap Ekspansi Lebih Cepat", level: 90, color: "warning" },
   ];
 
   return (
@@ -335,7 +346,7 @@ function App() {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-4 gradient-text">
-              Technical Skills
+              Ini Yang Akan Anda Rasakan!
             </h2>
             <div className="gradient-line mx-auto mb-5"></div>
           </div>

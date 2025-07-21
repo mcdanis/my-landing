@@ -1,0 +1,455 @@
+/* Modern Portfolio CSS - Bootstrap Version */
+
+/* Import Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");
+
+/* Import Bootstrap CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+
+/* Root Variables */
+:root {
+  --purple-500: #8b5cf6;
+  --purple-600: #7c3aed;
+  --purple-400: #a78bfa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-400: #60a5fa;
+  --dark-bg: #111827;
+  --dark-secondary: #1f2937;
+  --light-text: #d1d5db;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--dark-bg);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Custom Bootstrap Colors */
+.bg-dark {
+  background-color: var(--dark-bg) !important;
+}
+
+.bg-dark-secondary {
+  background-color: var(--dark-secondary) !important;
+}
+
+.text-purple {
+  color: var(--purple-400) !important;
+}
+
+.text-light {
+  color: var(--light-text) !important;
+}
+
+/* Padding Utility */
+.py-6 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: linear-gradient(135deg, #581c87 0%, #1e3a8a 50%, #312e81 100%);
+  position: relative;
+}
+
+.animated-bg {
+  opacity: 0.5;
+}
+
+.floating-particle {
+  opacity: 0.1;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translateY(-20px);
+  }
+}
+
+.hero-avatar {
+  width: 128px;
+  height: 128px;
+  position: relative;
+}
+
+.avatar-wrapper {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--purple-500), var(--blue-500));
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: var(--dark-secondary);
+  border-radius: 50%;
+}
+
+.avatar-wrapper i {
+  font-size: 4rem;
+  color: var(--purple-400);
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  background: linear-gradient(135deg, var(--purple-400), var(--blue-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--purple-400), var(--blue-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fade-in {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* BUTTONS */
+.btn-gradient-primary {
+  background: linear-gradient(135deg, var(--purple-600), var(--blue-600));
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-primary:hover {
+  background: linear-gradient(135deg, var(--purple-500), var(--blue-500));
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+  color: white;
+}
+
+.btn-gradient-purple-blue {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  border: none;
+  color: white;
+}
+
+.btn-gradient-emerald-teal {
+  background: linear-gradient(135deg, #059669, #0891b2);
+  border: none;
+  color: white;
+}
+
+.btn-gradient-orange-red {
+  background: linear-gradient(135deg, #ea580c, #dc2626);
+  border: none;
+  color: white;
+}
+
+/* GRADIENT LINES */
+.gradient-line {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--purple-500), var(--blue-500));
+  border-radius: 2px;
+}
+
+.gradient-line-white {
+  width: 100px;
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* ABOUT SECTION */
+.about-card {
+  perspective: 1000px;
+}
+
+.rotate-card {
+  transform: rotate(3deg);
+  transition: transform 0.5s ease;
+}
+
+.rotate-card:hover {
+  transform: rotate(0deg);
+}
+
+.counter-rotate {
+  transform: rotate(-3deg);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(
+    135deg,
+    var(--purple-600),
+    var(--blue-600)
+  ) !important;
+}
+
+/* PROJECT CARDS */
+.project-card {
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover .project-gradient-purple-blue,
+.project-card:hover .project-gradient-emerald-teal,
+.project-card:hover .project-gradient-orange-red {
+  opacity: 0.1 !important;
+}
+
+.project-gradient-purple-blue {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  transition: opacity 0.5s ease;
+}
+
+.project-gradient-emerald-teal {
+  background: linear-gradient(135deg, #059669, #0891b2);
+  transition: opacity 0.5s ease;
+}
+
+.project-gradient-orange-red {
+  background: linear-gradient(135deg, #ea580c, #dc2626);
+  transition: opacity 0.5s ease;
+}
+
+.project-icon {
+  width: 64px;
+  height: 64px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+  transform: scale(1.1);
+}
+
+.bg-gradient-purple-blue {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+}
+
+.bg-gradient-emerald-teal {
+  background: linear-gradient(135deg, #059669, #0891b2);
+}
+
+.bg-gradient-orange-red {
+  background: linear-gradient(135deg, #ea580c, #dc2626);
+}
+
+/* TIMELINE */
+.timeline-line {
+  left: 32px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--purple-500), var(--blue-500));
+}
+
+.timeline-dot {
+  width: 64px;
+  height: 64px;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.1);
+}
+
+.timeline-content {
+  transition: background-color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  background-color: #374151 !important;
+}
+
+/* SKILLS SECTION */
+.skill-item:hover .skill-name {
+  color: var(--purple-400) !important;
+}
+
+.skill-progress {
+  animation: slideIn 1.5s ease-out both;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0% !important;
+  }
+}
+
+.progress {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  transition: width 1.5s ease-out;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  background: linear-gradient(135deg, #581c87 0%, #1e3a8a 50%, #312e81 100%);
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-icon {
+  transition: color 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+  color: white !important;
+}
+
+.social-link {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  color: white;
+}
+
+.social-link:first-child:hover {
+  color: var(--purple-400) !important;
+}
+
+.social-link:last-child:hover {
+  color: var(--blue-400) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem !important;
+  }
+
+  .timeline-line {
+    left: 16px;
+  }
+
+  .timeline-dot {
+    width: 32px;
+    height: 32px;
+  }
+
+  .timeline-dot i {
+    font-size: 1rem !important;
+  }
+}
+
+/* SCROLL BEHAVIOR */
+html {
+  scroll-behavior: smooth;
+}
+
+/* UTILITIES */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* HOVER EFFECTS */
+.btn:hover,
+.project-card:hover,
+.timeline-item:hover,
+.contact-card:hover,
+.social-link:hover {
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.2);
+}
+
+/* ANIMATION DELAYS */
+.skill-progress:nth-child(1) {
+  animation-delay: 0s;
+}
+.skill-progress:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.skill-progress:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.skill-progress:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.skill-progress:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.skill-progress:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.skill-progress:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.skill-progress:nth-child(8) {
+  animation-delay: 0.7s;
+}

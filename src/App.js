@@ -44,28 +44,28 @@ function App() {
       company: "Salespond",
       location: "Australia",
       position: "Full Stack Developer",
-      period: "2023–Present",
+      period: "",
       icon: "bi-globe",
     },
     {
       company: "Indosoft",
       location: "Denmark",
       position: "Senior Web Programmer",
-      period: "2020–2022",
+      period: "",
       icon: "bi-server",
     },
     {
       company: "Wilmar International",
       location: "Singapore",
       position: "Fullstack Developer",
-      period: "2022",
+      period: "",
       icon: "bi-database",
     },
     {
       company: "RemoteBisnis",
       location: "Indonesia",
       position: "Owner & Developer",
-      period: "2021-2025",
+      period: "",
       icon: "bi-code-slash",
     },
   ];
@@ -121,18 +121,16 @@ function App() {
           >
             <div className="hero-avatar mx-auto mb-4">
               <div className="avatar-wrapper">
-                <i className="bi bi-code-slash"></i>
+                <img src="/img/me.png" alt="my photo"></img>
               </div>
             </div>
-
-            <h1 className="hero-title display-1 fw-bold mb-3 gradient-text">
+            <h3 className="hero-title fw-bold mb-3 gradient-text">
               McDani Saputra
-            </h1>
-            <p className="lead fs-2 mb-2 text-light">Full Stack Developer</p>
+            </h3>
+            <p className="lead mb-2 text-light">Full Stack Developer</p>
             <p className="fs-5 mb-5 text-purple">
               Sudah Dipercaya 8+ Tahun • Terbukti di Proyek Global & Nasional
             </p>
-
             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-5">
               <a
                 href="#projects"
@@ -146,6 +144,19 @@ function App() {
               >
                 Get In Touch
               </a>
+            </div>
+            <div className="logo p-2 bg-white rounded">
+              <img src="/img/logo/logo.jpg" alt="Logo" />
+              <img src="/img/logo/logo2.png" alt="Logo" />
+              <img src="/img/logo/logo4.png" alt="Logo" />
+              <img src="/img/logo/logo5.png" alt="Logo" />
+              <img src="/img/logo/logo6.png" alt="Logo" />
+              <img src="/img/logo/logo7.png" alt="Logo" />
+              <img src="/img/logo/logo8.png" alt="Logo" />
+              <img src="/img/logo/logo9.png" alt="Logo" />
+              <img src="/img/logo/logo11.webp" alt="Logo" />
+              <img src="/img/logo/logo10.png" alt="Logo" />
+              <img src="/img/logo/logo3.png" alt="Logo" />
             </div>
           </div>
         </div>
@@ -188,10 +199,10 @@ function App() {
 
                 <div className="d-flex flex-wrap gap-2 pt-3">
                   {[
-                    "🌍 International",
-                    "🚀 Remote Expert",
-                    "⚡ Fast Delivery",
-                    "🎯 Quality Focus",
+                    "🌍 Accessible ",
+                    "🚀 Intuitive Application",
+                    "🔑 Secure",
+                    "⚡ Quality",
                   ].map((item, idx) => (
                     <span
                       key={idx}
@@ -213,7 +224,7 @@ function App() {
                         <div className="d-flex align-items-center gap-3">
                           <i className="bi bi-globe fs-4 text-purple"></i>
                           <span className="fs-5 text-white">
-                            International Projects
+                            User Friendly Application
                           </span>
                         </div>
                       </div>
@@ -221,7 +232,7 @@ function App() {
                         <div className="d-flex align-items-center gap-3">
                           <i className="bi bi-code-slash fs-4 text-primary"></i>
                           <span className="fs-5 text-white">
-                            Modern Technologies
+                            Aplikasi Modern
                           </span>
                         </div>
                       </div>
@@ -357,23 +368,8 @@ function App() {
                 <div className="skill-item">
                   <div className="d-flex justify-content-between align-items-center mb-2">
                     <span className="fs-5 fw-medium text-white skill-name">
-                      {skill.name}
+                      ✅ {skill.name}
                     </span>
-                    <span className="text-purple fw-medium">
-                      {skill.level}%
-                    </span>
-                  </div>
-                  <div
-                    className="progress bg-secondary"
-                    style={{ height: "12px" }}
-                  >
-                    <div
-                      className={`progress-bar bg-${skill.color} rounded skill-progress`}
-                      style={{
-                        width: `${skill.level}%`,
-                        animationDelay: `${idx * 0.1}s`,
-                      }}
-                    ></div>
                   </div>
                 </div>
               </div>
@@ -387,7 +383,7 @@ function App() {
         <div className="container text-center">
           <div className="mb-5">
             <h2 className="display-4 fw-bold mb-4 text-white">
-              Mari Wujudkan Bersama
+              Bangun Sistem Sesuai Cara Kerja Bisnis Anda
             </h2>
             <div className="gradient-line-white mx-auto mb-5"></div>
             <p
@@ -395,8 +391,12 @@ function App() {
               style={{ maxWidth: "600px" }}
             >
               Punya ide atau kebutuhan khusus untuk bisnis Anda? <br />
-              Atau ingin mendapatkan sudut pandang baru untuk pengembangan
-              bisnis Anda? <br />
+              <br />
+              Saya akan membantu merancang web sistem yang benar-benar
+              menyesuaikan proses bisnis Anda — bukan sekadar template, tapi
+              solusi yang dirancang khusus agar alur kerja jadi lebih efisien,
+              rapi, dan bisa diakses tim Anda kapan saja.
+              <br />
               <br />
               Saya siap membantu Anda merancang solusi digital yang sesuai,
               fleksibel, dan bisa disesuaikan. Mari mulai dari obrolan santai

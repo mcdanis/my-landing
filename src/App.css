@@ -93,14 +93,6 @@ body {
   justify-content: center;
 }
 
-.avatar-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  background: var(--dark-secondary);
-  border-radius: 50%;
-}
-
 .avatar-wrapper i {
   font-size: 4rem;
   color: var(--purple-400);

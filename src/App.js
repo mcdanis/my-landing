@@ -114,55 +114,78 @@ function App() {
           ))}
         </div>
 
-        <div className="container text-center position-relative">
+        <div className="container text-center position-relative px-3 px-md-5">
           <div
             className={`hero-content ${isVisible ? "fade-in" : ""}`}
             style={{ transform: `translateY(${scrollY * 0.5}px)` }}
           >
-            <div className="hero-avatar mx-auto mb-4">
-              <div className="avatar-wrapper">
-                <img src="/img/me.png" alt="my photo"></img>
+            <div
+              className="hero-avatar mx-auto mb-4"
+              style={{ maxWidth: "180px" }}
+            >
+              <div className="avatar-wrapper rounded-circle overflow-hidden">
+                <img
+                  src="/img/me.png"
+                  alt="my photo"
+                  className="img-fluid w-100"
+                />
               </div>
             </div>
-            <h3 className="hero-title fw-bold mb-3 gradient-text">
+            <h3 className="hero-title fw-bold mb-3 gradient-text fs-2 fs-md-1">
               McDani Saputra
             </h3>
-            <p className="lead mb-2 text-light">Full Stack Developer</p>
-            <p className="fs-5 mb-5 text-purple">
+            <p className="lead mb-2 text-light fs-6 fs-md-5">
+              Full Stack Developer
+            </p>
+            <p className="fs-6 fs-md-5 mb-4 text-purple">
               Sudah Dipercaya 8+ Tahun • Terbukti di Proyek Global & Nasional
             </p>
-            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-5">
+            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4">
               <a
                 href="#projects"
-                className="btn btn-gradient-primary btn-lg px-5 py-3 rounded-pill fw-medium"
+                className="btn btn-gradient-primary btn-lg px-4 py-3 rounded-pill fw-medium"
               >
                 Explore My Work
               </a>
               <a
                 href="#contact"
-                className="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-medium"
+                className="btn btn-outline-light btn-lg px-4 py-3 rounded-pill fw-medium"
               >
                 Get In Touch
               </a>
             </div>
-            <div className="logo p-2 bg-white rounded">
-              <img src="/img/logo/logo.jpg" alt="Logo" />
-              <img src="/img/logo/logo2.png" alt="Logo" />
-              <img src="/img/logo/logo4.png" alt="Logo" />
-              <img src="/img/logo/logo5.png" alt="Logo" />
-              <img src="/img/logo/logo6.png" alt="Logo" />
-              <img src="/img/logo/logo7.png" alt="Logo" />
-              <img src="/img/logo/logo8.png" alt="Logo" />
-              <img src="/img/logo/logo9.png" alt="Logo" />
-              <img src="/img/logo/logo11.webp" alt="Logo" />
-              <img src="/img/logo/logo10.png" alt="Logo" />
-              <img src="/img/logo/logo3.png" alt="Logo" />
+            <div className="logo d-flex flex-wrap justify-content-center align-items-center gap-3 p-3 bg-white rounded">
+              {[
+                "logo.jpg",
+                "logo2.png",
+                "logo4.png",
+                "logo5.png",
+                "logo6.png",
+                "logo7.png",
+                "logo8.png",
+                "logo9.png",
+                "logo11.webp",
+                "logo10.png",
+                "logo3.png",
+              ].map((file, i) => (
+                <img
+                  key={i}
+                  src={`/img/logo/${file}`}
+                  alt="Logo"
+                  className="img-fluid"
+                  style={{
+                    maxHeight: "40px",
+                    maxWidth: "80px",
+                    objectFit: "contain",
+                  }}
+                />
+              ))}
             </div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x pb-4">
+        <div className="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x pb-4 d-none d-md-block">
           <i className="bi bi-chevron-down fs-1 text-purple bounce-animation"></i>
         </div>
       </section>
@@ -386,10 +409,7 @@ function App() {
               Bangun Sistem Sesuai Cara Kerja Bisnis Anda
             </h2>
             <div className="gradient-line-white mx-auto mb-5"></div>
-            <p
-              className="fs-4 text-light mx-auto"
-              style={{ maxWidth: "600px" }}
-            >
+            <p className="fs-4 text-light mx-auto px-5">
               Punya ide atau kebutuhan khusus untuk bisnis Anda? <br />
               <br />
               Saya akan membantu merancang web sistem yang benar-benar

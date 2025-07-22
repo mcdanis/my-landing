@@ -23,3 +23,18 @@ body {
   width: 117px;
   border-radius: 50%;
 }
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .text-purple {
+    font-size: 0.95rem;
+  }
+  .hero-avatar {
+    max-width: 120px;
+  }
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}

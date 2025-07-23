@@ -19,7 +19,7 @@ function App() {
       desc: "Travel agency global terbaik di Denmark",
       tech: ["PHP", "JavaScript", "MySQL"],
       gradient: "purple-blue",
-      img: "/img/risskov.png",
+      img: "/img/risskov_compressed.jpg",
     },
     {
       title: "Podiem (Australia)",
@@ -27,7 +27,7 @@ function App() {
       desc: "Platform CRM untuk meningkatkan penjualan terbaik di Australia",
       tech: ["Laravel", "Vue.js", "Redis"],
       gradient: "emerald-teal",
-      img: "/img/podiem.png",
+      img: "/img/podiem_compressed.jpg",
     },
     {
       title: "Food Tours (Europe)",
@@ -35,7 +35,7 @@ function App() {
       desc: "Situs tour kuliner terbaik di Eropa",
       tech: ["WordPress", "PHP", "JavaScript"],
       gradient: "orange-red",
-      img: "/img/foodtours.png",
+      img: "/img/foodtours_compressed.jpg",
     },
   ];
 
@@ -427,7 +427,7 @@ function App() {
           <div className="row g-4 mb-5 justify-content-center">
             <div className="col-md-5">
               <a
-                href="mailto:mcdanisaputra@gmail.com"
+                href="mailto:danisaputra.dev@gmail.com"
                 className="contact-card d-flex align-items-center justify-content-center gap-3 p-4 rounded-4 text-decoration-none"
               >
                 <i className="bi bi-envelope fs-2 text-purple contact-icon"></i>
